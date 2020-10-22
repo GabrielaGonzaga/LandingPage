@@ -3,6 +3,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 .topo{
@@ -13,7 +14,8 @@
 
 .topo nav{                                                   
     height:50px;
-    widows: 1200px;
+    max-width:  1200px;
+    width: 90%;
     margin: 0 auto 0 auto;/*cima direita baixo esquerda*/
     display:flex;
     justify-content:flex-end;
@@ -35,7 +37,8 @@
 
 .topo nav ul{
     height:50px;
-    width:600px;
+    width: 90%;
+    max-width:600px;
     list-style-type: none;/*Remove os marcadores de linha*/
     display: flex;/*deixa os elementos um do lado do outro*/
     justify-content:space-around;
@@ -52,7 +55,8 @@
 
 .content{
     height:100%;
-    width:1200px;
+    width: 90%;
+    max-width:1200px;
     margin: auto;
     display: flex;
     align-items: flex-end;
@@ -102,11 +106,12 @@
 }
 
 .sobre{
-    width: 1200px;
+    max-width: 1200px;
+    width: 90%;
     height: 100%;
     /*background-color: rgba(179, 175, 175, 0.507);*/
     margin: 0 auto;
-    
+    position: relative;
 }
 
 .sobre h2{
@@ -163,7 +168,8 @@
 }
 
 .info{
-    width: 1200px;
+    max-width: 1200px;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     margin: 0 auto;
@@ -200,7 +206,8 @@
 
 .end_content{
     height:100%;
-    width:1200px;
+    width: 90%;
+    max-width:1200px;
     margin: auto;
     display: flex;
    align-items: center;
@@ -263,3 +270,55 @@
     bottom: 25px;
     right: 25px;
 }
+@media screen and (max-width:1200px){
+    .topo nav{
+        width: 80%;
+    }
+    .content{
+        width: 80%;
+    }
+    .end_content{
+        width: 80%;
+    }
+    .bk_sobre{
+        height: auto;
+        padding-bottom: 4em;
+    }
+    .conteudo_sobre{
+        flex-direction: column;
+    }
+    .conteudo_sobre img{
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 2em;
+        margin-top: -60px;
+    }
+    .sobre{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info_card p{
+        width: 220px;
+    }
+    .endereço{
+        height: auto;
+        padding: 3em 0;
+    }
+    .text-endereço{
+        height: auto;
+        width: 100%;
+        max-width: 900px;
+        flex-direction: column;
+        padding: 2em 2em;
+    }
+    .text-endereço p{
+        margin-left: unset;
+        margin-bottom: 2em;
+    }
+    .text-endereço img{
+        position: unset;
+    }
+    
+} 
