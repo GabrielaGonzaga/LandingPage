@@ -13,7 +13,7 @@
 
 .topo nav{                                                   
     height:50px;
-    width:1200px;
+    widows: 1200px;
     margin: 0 auto 0 auto;/*cima direita baixo esquerda*/
     display:flex;
     justify-content:flex-end;
@@ -262,48 +262,4 @@
     position: fixed;
     bottom: 25px;
     right: 25px;
-}
-
-@media screen and (max-width: 768px){
-
-	.flex-mosaico{
-		display: block;
-	}
-
-	.item-1-mosaico{
-		padding-top: 60%;
-		width: 100%;
-	}
-
-	.item-2-mosaico{
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 960px){
-	.bg{
-		float: none;
-		text-align: center;
-	}
-
-	.form-container{
-		float: none;
-		width: 96%;
-		max-width: 400px;
-		position: static;
-		display: inline-block;	
-	}
-}
-
-
-@media screen and (max-width: 510px){
-
-	header{
-		text-align: center;
-	}
-
-	.logo-1,.logo-2{
-		display: inline-block;
-		float: none;
-	}
 }
